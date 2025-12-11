@@ -1,0 +1,95 @@
+# MARL-IoTP Configuration - MAPPO
+
+# Environment settings
+num_iot_devices: 20
+num_edge_servers: 3
+devices_per_server: 7  # ceil(20/3)
+num_perception_models: 4
+max_queue_length: 10
+episode_length: 200
+
+# Reward weights
+reward_weights:
+  latency: 0.4
+  energy: 0.3
+  accuracy: 0.3
+
+# Deadline and QoS
+max_latency_ms: 100
+min_accuracy: 0.6
+deadline_penalty: 10.0
+
+# Agent network settings
+perception_obs_dim: 16
+orchestration_obs_dim: 32
+message_dim: 8
+hidden_dim: 128
+critic_hidden_dim: 256
+
+# MAPPO hyperparameters
+gamma: 0.99
+gae_lambda: 0.95
+clip_epsilon: 0.2
+entropy_coef: 0.01
+value_loss_coef: 0.5
+max_grad_norm: 0.5
+lr: 0.0003
+ppo_epochs: 10
+num_minibatches: 4
+
+# Training settings
+update_interval: 10
+eval_interval: 100
+save_interval: 1000
+buffer_size: 2048
+batch_size: 64
+
+# Perception model specifications (simulated)
+perception_models:
+  - name: "MobileNet-Tiny"
+    accuracy: 0.65
+    latency_factor: 0.3
+    energy_factor: 0.2
+    flops_million: 50
+  - name: "MobileNet-Small"
+    accuracy: 0.75
+    latency_factor: 0.5
+    energy_factor: 0.4
+    flops_million: 150
+  - name: "MobileNet-Large"
+    accuracy: 0.85
+    latency_factor: 0.8
+    energy_factor: 0.7
+    flops_million: 300
+  - name: "ResNet-Edge"
+    accuracy: 0.92
+    latency_factor: 1.0
+    energy_factor: 1.0
+    flops_million: 500
+
+# Network simulation
+channel_model: "rayleigh"
+bandwidth_mhz: 20
+noise_power_dbm: -100
+path_loss_exponent: 3.5
+reference_distance_m: 1.0
+reference_path_loss_db: 30.0
+
+# Edge server specifications
+edge_server:
+  cpu_frequency_ghz: 3.0
+  num_cores: 8
+  memory_gb: 16
+  max_concurrent_tasks: 10
+
+# IoT device specifications
+iot_device:
+  cpu_frequency_ghz: 1.5
+  battery_capacity_mah: 5000
+  transmit_power_dbm: 20
+
+# Cloud specifications
+cloud:
+  latency_base_ms: 50
+  latency_variance_ms: 20
+  infinite_resources: true
