@@ -1,0 +1,46 @@
+{
+  "10": {
+    "num_devices": 10,
+    "num_servers": 1,
+    "training_time": 35068.49611568451,
+    "eval_reward_mean": -193.26425380149863,
+    "eval_reward_std": 19.704468162232825,
+    "eval_latency_mean": 97.93707135706873,
+    "eval_accuracy_mean": 0.8920864500000002,
+    "eval_throughput_mean": 605.06,
+    "convergence_episode": 5000
+  },
+  "20": {
+    "num_devices": 20,
+    "num_servers": 2,
+    "training_time": 70312.60230374336,
+    "eval_reward_mean": -374.2597417094808,
+    "eval_reward_std": 30.46832433309416,
+    "eval_latency_mean": 101.0612381621252,
+    "eval_accuracy_mean": 0.9181224776695526,
+    "eval_throughput_mean": 1203.86,
+    "convergence_episode": 5000
+  },
+  "30": {
+    "num_devices": 30,
+    "num_servers": 4,
+    "training_time": 112126.32469844818,
+    "eval_reward_mean": -3608.9408781354023,
+    "eval_reward_std": 223.21534209948743,
+    "eval_latency_mean": 92.6384580718442,
+    "eval_accuracy_mean": 0.7109443759041507,
+    "eval_throughput_mean": 1802.86,
+    "convergence_episode": 5000
+  },
+  "50": {
+    "num_devices": 50,
+    "num_servers": 7,
+    "training_time": 181903.65845179558,
+    "eval_reward_mean": -5855.838944575979,
+    "eval_reward_std": 227.83786903810756,
+    "eval_latency_mean": 92.48272642406064,
+    "eval_accuracy_mean": 0.7834551016074077,
+    "eval_throughput_mean": 2997.58,
+    "convergence_episode": 5000
+  }
+}

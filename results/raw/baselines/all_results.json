@@ -1,0 +1,97 @@
+{
+  "mappo": {
+    "mean_reward": -0.05000916441561437,
+    "std_reward": 0.3214683976937995,
+    "mean_latency": 100.93178701487916,
+    "mean_energy": 0.0012647651285405007,
+    "mean_accuracy": 0.9043680064262298,
+    "mean_violations": 0.0,
+    "p50_latency": 100.96373829228816,
+    "p90_latency": 113.94857123235103,
+    "p95_latency": 117.71031412101223,
+    "p99_latency": 125.75119858972221,
+    "reward_fairness": 0.9982880698421157,
+    "latency_fairness": 0.9999999999999997,
+    "mean_edp": 0.13291388668673612,
+    "deadline_success_rate": 1.0,
+    "num_samples": 400000,
+    "final_reward": -403.6824427682014,
+    "reward_std": 38.80468124312654,
+    "mutual_information": {
+      "total_mi": 0.05006464868383095,
+      "normalized_mi": 0.44256102760855764,
+      "state_entropy": 14.479980448646348,
+      "per_dim_mi": {
+        "msg_dim_0": 0.05265639992057549,
+        "msg_dim_1": 0.043133063315965385,
+        "msg_dim_2": 0.043874652872009846,
+        "msg_dim_3": 0.05355323125714486,
+        "msg_dim_4": 0.05099370686274042,
+        "msg_dim_5": 0.058532147355548514,
+        "msg_dim_6": 0.06131002170880884,
+        "msg_dim_7": 0.036463966177854225
+      }
+    },
+    "attention_analysis": {
+      "mean_weights": [
+        0.14287586510181427,
+        0.14293430745601654,
+        0.1429196149110794,
+        0.14293283224105835,
+        0.14291350543498993,
+        0.14294643700122833,
+        0.14287909865379333
+      ],
+      "std_weights": [
+        3.6357978387968615e-05,
+        7.313883543247357e-05,
+        6.78014475852251e-05,
+        7.444393122568727e-05,
+        7.136593922041357e-05,
+        6.174371810629964e-05,
+        4.901132342638448e-05
+      ],
+      "entropy": 2.807354211807251,
+      "concentration": 8.793630927481235e-05,
+      "correlations": {}
+    }
+  },
+  "dptora": {
+    "mean_reward": -112.79591777031011,
+    "std_reward": 52.777979439939244,
+    "mean_latency": Infinity,
+    "mean_energy": 13.463717897358784,
+    "mean_accuracy": 0.6940531830231651,
+    "mean_violations": 0.0,
+    "p50_latency": 673.8269933762432,
+    "p90_latency": NaN,
+    "p95_latency": NaN,
+    "p99_latency": NaN,
+    "reward_fairness": 1.0,
+    "latency_fairness": 1.0,
+    "mean_edp": Infinity,
+    "deadline_success_rate": 1.0,
+    "num_samples": 600000,
+    "final_reward": -22672.128637907823,
+    "reward_std": 861.2166556309852
+  },
+  "madoa": {
+    "mean_reward": -111.29553162558904,
+    "std_reward": 52.39025623795186,
+    "mean_latency": Infinity,
+    "mean_energy": 12.941658991027,
+    "mean_accuracy": 0.696732868054205,
+    "mean_violations": 0.0,
+    "p50_latency": 644.7970484265502,
+    "p90_latency": NaN,
+    "p95_latency": NaN,
+    "p99_latency": NaN,
+    "reward_fairness": 1.0,
+    "latency_fairness": 1.0,
+    "mean_edp": Infinity,
+    "deadline_success_rate": 1.0,
+    "num_samples": 600000,
+    "final_reward": -22228.16535406096,
+    "reward_std": 642.0408913623237
+  }
+}

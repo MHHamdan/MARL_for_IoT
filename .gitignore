@@ -1,0 +1,83 @@
+# =============================================================================
+# MARL-IoTP .gitignore
+# =============================================================================
+
+# Old directories (moved/reorganized)
+Tips/
+updated_paper/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual environments
+venv/
+ENV/
+env/
+.venv/
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+*.ipynb
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Claude Code
+.claude/
+
+# Results - track structure, exclude large files
+results/raw/*/tensorboard/
+results/raw/*/checkpoints/
+results/checkpoints/
+
+# Model checkpoints (large files)
+*.pt
+*.pth
+*.ckpt
+models/
+
+# Logs
+logs/
+*.log
+wandb/
+tensorboard/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+
+# Data files (if any large datasets added later)
+data/
+datasets/
+
+# Compiled files
+*.pyc
+*.pyo

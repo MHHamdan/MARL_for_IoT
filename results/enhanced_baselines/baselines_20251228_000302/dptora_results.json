@@ -1,0 +1,19 @@
+{
+  "mean_reward": -112.79591777031011,
+  "std_reward": 52.777979439939244,
+  "mean_latency": Infinity,
+  "mean_energy": 13.463717897358784,
+  "mean_accuracy": 0.6940531830231651,
+  "mean_violations": 0.0,
+  "p50_latency": 673.8269933762432,
+  "p90_latency": NaN,
+  "p95_latency": NaN,
+  "p99_latency": NaN,
+  "reward_fairness": 1.0,
+  "latency_fairness": 1.0,
+  "mean_edp": Infinity,
+  "deadline_success_rate": 1.0,
+  "num_samples": 600000,
+  "final_reward": -22672.128637907823,
+  "reward_std": 861.2166556309852
+}
