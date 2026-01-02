@@ -1,15 +1,20 @@
-# MARL-IoTP: Multi-Agent Reinforcement Learning for IoT Perception and Task Processing
+# MARL-IoTP: Heterogeneous Multi-Agent Learning for Perception-Aware Edge Orchestration
 
+<<<<<<< HEAD
 A heterogenous Multi-Agent Reinforcement Learning framework for joint optimization of perception model selection and resource orchestration in IoT edge computing environments.
+=======
+A heterogeneous multi-agent reinforcement learning framework that jointly optimizes perception model selection at IoT devices and computational resource orchestration at edge servers, achieving perception-aware task offloading through learned inter-agent communication.
+>>>>>>> 0f54a6f (updated docs)
 
 ## Overview
 
-MARL-IoTP addresses the challenge of coordinating multiple IoT devices and edge servers to optimize perception quality, latency, and energy consumption. The framework uses:
+The proliferation of perception-intensive IoT applications demands intelligent coordination between resource-constrained devices and edge computing infrastructure. MARL-IoTP introduces a heterogeneous multi-agent architecture where perception agents (IoT devices) and orchestration agents (edge servers) learn complementary policies through emergent communication protocols.
 
-- **Hierarchical Agent Architecture**: Perception agents (IoT devices) and orchestration agents (edge servers)
-- **Learned Communication Protocol**: 8-dimensional message encoding between agents
-- **Attention-Based Aggregation**: Multi-head attention for processing device messages
-- **CTDE Paradigm**: Centralized Training with Decentralized Execution
+**Key Innovations:**
+- **Heterogeneous Agent Architecture**: Distinct perception and orchestration agents with role-specific observation spaces and action semantics
+- **Emergent Communication Protocol**: Learned 8-dimensional message encoding that conveys perception requirements and resource availability
+- **Attention-Based Aggregation**: Multi-head attention mechanism for processing variable numbers of device messages
+- **CTDE Paradigm**: Centralized Training with Decentralized Execution enabling scalable deployment
 
 ### Key Results
 
@@ -112,44 +117,6 @@ python evaluation/evaluate.py --checkpoint results/checkpoints/best_model/
 
 # Run baseline comparisons
 python evaluation/run_baselines.py
-```
-
-## Reproducing Paper Results
-
-### Main Results (Table 1)
-
-```bash
-python experiments/exp_main.py --episodes 5000 --seed 42
-```
-
-**Expected:** Reward: -403.7, Accuracy: 90.4%, Latency: 100.9ms
-
-### Ablation Study (Table 2)
-
-```bash
-python experiments/exp_ablation.py --ablation all --episodes 5000
-```
-
-### Scalability Analysis (Figure 5)
-
-```bash
-python experiments/exp_scalability.py --device_counts 10 20 30 50
-```
-
-### Full Reproduction
-
-```bash
-# Run all experiments (~24 hours on single GPU)
-./scripts/reproduce_all.sh
-
-# Or use Python script
-python experiments/run_all.py --mode full
-```
-
-### Generate Figures
-
-```bash
-cd figures && python generate_figures.py
 ```
 
 ## Environment Details
@@ -262,9 +229,8 @@ reward_weights:
 
 ```bibtex
 @inproceedings{hamdan2026marliotp,
-  title={MARL-IoTP: Hierarchical Multi-Agent Reinforcement Learning
-         for Joint Perception Model Selection and Resource
-         Orchestration in IoT Edge Networks},
+  title={MARL-IoTP: Heterogeneous Multi-Agent Learning for
+         Perception-Aware Edge Orchestration},
   author={Hamdan, Mohammad H. and [Co-authors]},
   booktitle={International Conference on Pattern Recognition
              and Artificial Intelligence (ICPRAI)},
