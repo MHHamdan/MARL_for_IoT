@@ -1,6 +1,6 @@
 # MARL-IoTP: Multi-Agent Reinforcement Learning for IoT Perception and Task Processing
 
-A hierarchical Multi-Agent Reinforcement Learning framework for joint optimization of perception model selection and resource orchestration in IoT edge computing environments.
+A heterogenous Multi-Agent Reinforcement Learning framework for joint optimization of perception model selection and resource orchestration in IoT edge computing environments.
 
 ## Overview
 
@@ -22,7 +22,7 @@ MARL-IoTP addresses the challenge of coordinating multiple IoT devices and edge 
 
 ## System Architecture
 
-![MARL-IoTP System Architecture](docs/system_architecture.png)
+
 
 The framework employs **Centralized Training with Decentralized Execution (CTDE)** with:
 - **Centralized Critic**: Global value estimation during training
